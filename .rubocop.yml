@@ -1,0 +1,32 @@
+require:
+  - rubocop-performance
+
+AllCops:
+  NewCops: disable
+  SuggestExtensions: false
+  Exclude:
+    - Gemfile
+    - Guardfile
+    - Rakefile
+    - '.**'
+    - '**.gemspec'
+    - 'bin/**/*'
+    - 'config/**/*'
+    - 'test/**/*'
+    - 'spec/**/*'
+    - 'vendor/**/*'
+    - '**/**.bak'
+    - '**/**.yml'
+  TargetRubyVersion: 2.6
+  UseCache: true
+
+Layout/EmptyLineBetweenDefs:
+  Enabled: false
+Layout/LineLength:
+  Max: 160
+Metrics/AbcSize:
+  Enabled: false
+Metrics/MethodLength:
+  Max: 30
+Naming/MemoizedInstanceVariableName:
+  Enabled: false

@@ -1,0 +1,2 @@
+--title 'LdapQuery'
+--exclude /lib/ldap_query/version.rb
